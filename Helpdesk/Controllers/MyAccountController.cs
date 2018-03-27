@@ -25,7 +25,7 @@ namespace Helpdesk.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Login(Login login, string ReturnUrl = "")
+        public ActionResult Login(LoginViewModel login, string ReturnUrl = "")
         {
             //if (ModelState.IsValid)
             //{

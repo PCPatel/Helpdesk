@@ -224,7 +224,7 @@
     <Compile Include="Models\Status.cs" />
     <Compile Include="Models\Type.cs" />
     <Compile Include="Models\User.cs" />
-    <Compile Include="Models\ViewModel\Login.cs" />
+    <Compile Include="Models\ViewModel\LoginViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

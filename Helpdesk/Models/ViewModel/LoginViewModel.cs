@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Helpdesk.Models.ViewModel
 {
-    public class Login
+    public class LoginViewModel
     {
         [Required(ErrorMessage = "Username is required.", AllowEmptyStrings = false)]
         public string Username { get; set; }
