@@ -16,11 +16,8 @@
         <nav class="main-menu">
             <ul>
                 <li style="color:#fff;white-space:nowrap;">
-                    @*@(Request.IsAuthenticated ? HttpContext.Current.User.Identity.Name : "Guest")*@
                     @{
-
                         var identity = (HttpContext.Current.User as Helpdesk.Infrastructure.MyPrincipal).Identity as Helpdesk.Infrastructure.MyIdentity;
-                        @*<text>@string.Format("Hello {0}", identity.User.Name)</text>*@
                         <img src="~/Content/images/P2015.jpg" class="img-circle img-responsive" style="margin-left:10px;width:40px;display:inline;" />
                         <span class="nav-text" style="display:inline;margin-left:5px;">
                             @identity.User.Name
