@@ -22,6 +22,7 @@ namespace Helpdesk.Models.Configuration
             Property(x => x.Password).IsRequired().HasMaxLength(12);
 
             HasIndex(x => x.Name).IsUnique(true);
+            HasIndex(x => x.UserName).IsUnique(true);
 
             HasMany(t => t.Roles)
             .WithMany(t => t.Users);

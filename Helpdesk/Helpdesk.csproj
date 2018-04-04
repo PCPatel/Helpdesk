@@ -205,9 +205,9 @@
     <Compile Include="Migrations\201803210408229_AddInitialMasterData.Designer.cs">
       <DependentUpon>201803210408229_AddInitialMasterData.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804041039553_addUniqueIndexOnColumnNameOfAllMasterTable.cs" />
-    <Compile Include="Migrations\201804041039553_addUniqueIndexOnColumnNameOfAllMasterTable.Designer.cs">
-      <DependentUpon>201804041039553_addUniqueIndexOnColumnNameOfAllMasterTable.cs</DependentUpon>
+    <Compile Include="Migrations\201804041047033_addUniqueIndexOnColumnNameOfAllMasterTable.cs" />
+    <Compile Include="Migrations\201804041047033_addUniqueIndexOnColumnNameOfAllMasterTable.Designer.cs">
+      <DependentUpon>201804041047033_addUniqueIndexOnColumnNameOfAllMasterTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Attachment.cs" />
@@ -333,8 +333,8 @@
     <EmbeddedResource Include="Migrations\201803210408229_AddInitialMasterData.resx">
       <DependentUpon>201803210408229_AddInitialMasterData.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804041039553_addUniqueIndexOnColumnNameOfAllMasterTable.resx">
-      <DependentUpon>201804041039553_addUniqueIndexOnColumnNameOfAllMasterTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804041047033_addUniqueIndexOnColumnNameOfAllMasterTable.resx">
+      <DependentUpon>201804041047033_addUniqueIndexOnColumnNameOfAllMasterTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

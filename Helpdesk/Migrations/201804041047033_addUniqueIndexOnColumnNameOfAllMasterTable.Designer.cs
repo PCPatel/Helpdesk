@@ -13,7 +13,7 @@ namespace Helpdesk.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201804041039553_addUniqueIndexOnColumnNameOfAllMasterTable"; }
+            get { return "201804041047033_addUniqueIndexOnColumnNameOfAllMasterTable"; }
         }
         
         string IMigrationMetadata.Source

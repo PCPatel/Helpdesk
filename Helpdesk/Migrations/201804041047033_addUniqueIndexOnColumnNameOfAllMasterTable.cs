@@ -8,6 +8,7 @@ namespace Helpdesk.Migrations
         public override void Up()
         {
             CreateIndex("dbo.Users", "Name", unique: true);
+            CreateIndex("dbo.Users", "UserName", unique: true);
             CreateIndex("dbo.Roles", "Name", unique: true);
             CreateIndex("dbo.Components", "Name", unique: true);
             CreateIndex("dbo.Priorities", "Name", unique: true);
@@ -22,6 +23,7 @@ namespace Helpdesk.Migrations
             DropIndex("dbo.Priorities", new[] { "Name" });
             DropIndex("dbo.Components", new[] { "Name" });
             DropIndex("dbo.Roles", new[] { "Name" });
+            DropIndex("dbo.Users", new[] { "UserName" });
             DropIndex("dbo.Users", new[] { "Name" });
         }
     }
