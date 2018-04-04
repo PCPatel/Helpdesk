@@ -37,5 +37,7 @@ namespace Helpdesk.Models
 
             base.OnModelCreating(modelBuilder);
         }
+
+        public System.Data.Entity.DbSet<Helpdesk.Models.ViewModel.ComponentViewModel> ComponentViewModels { get; set; }
     }
 }

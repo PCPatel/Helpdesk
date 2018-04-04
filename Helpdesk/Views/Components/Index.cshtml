@@ -1,0 +1,26 @@
+﻿@model Helpdesk.Models.ViewModel.ComponentViewModel
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container">
+    <div class="row">
+        <h4>Components</h4>
+        @Html.ActionLink("Add New", "Add", "Component", new { area = "" }, new { @class = "btn btn-primary " })
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        @foreach (var comp in Model.components)
+        {
+            <tr>
+                <td>@comp.Name</td>
+                <td></td>
+            </tr>
+        }
+    </table>
+</div>
