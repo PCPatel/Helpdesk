@@ -16,6 +16,8 @@ namespace Helpdesk.Models.Configuration
             Property(x => x.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
 
             Property(x => x.Name).IsRequired().HasMaxLength(10);
+
+            HasIndex(x => x.Name).IsUnique(true);
         }
     }
 }

@@ -18,6 +18,8 @@ namespace Helpdesk.Models.Configuration
 
             Property(x => x.Name).HasMaxLength(20).IsRequired();
 
+            HasIndex(x => x.Name).IsUnique(true);
+
             HasMany(t => t.Users)
             .WithMany(t => t.Roles)
             .Map(m =>

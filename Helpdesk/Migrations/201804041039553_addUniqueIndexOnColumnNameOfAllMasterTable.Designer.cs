@@ -7,13 +7,13 @@ namespace Helpdesk.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class addUniqueIndexOnColumnNameOfTableComponent : IMigrationMetadata
+    public sealed partial class addUniqueIndexOnColumnNameOfAllMasterTable : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addUniqueIndexOnColumnNameOfTableComponent));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addUniqueIndexOnColumnNameOfAllMasterTable));
         
         string IMigrationMetadata.Id
         {
-            get { return "201804041025138_addUniqueIndexOnColumnNameOfTableComponent"; }
+            get { return "201804041039553_addUniqueIndexOnColumnNameOfAllMasterTable"; }
         }
         
         string IMigrationMetadata.Source
