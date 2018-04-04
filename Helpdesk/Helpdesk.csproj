@@ -205,6 +205,10 @@
     <Compile Include="Migrations\201803210408229_AddInitialMasterData.Designer.cs">
       <DependentUpon>201803210408229_AddInitialMasterData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804041025138_addUniqueIndexOnColumnNameOfTableComponent.cs" />
+    <Compile Include="Migrations\201804041025138_addUniqueIndexOnColumnNameOfTableComponent.Designer.cs">
+      <DependentUpon>201804041025138_addUniqueIndexOnColumnNameOfTableComponent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Attachment.cs" />
     <Compile Include="Models\BaseEntity.cs" />
@@ -329,6 +333,9 @@
     <EmbeddedResource Include="Migrations\201803210408229_AddInitialMasterData.resx">
       <DependentUpon>201803210408229_AddInitialMasterData.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804041025138_addUniqueIndexOnColumnNameOfTableComponent.resx">
+      <DependentUpon>201804041025138_addUniqueIndexOnColumnNameOfTableComponent.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -351,7 +358,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>57748</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
